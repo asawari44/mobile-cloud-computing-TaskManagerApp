@@ -1,7 +1,7 @@
 # MCC Group 3 fall 2019 Project
 
 #### The repository contains the source code for the project. 
-![architecture](cloud.png)
+![architecture](cloud.jpg)
 ## Dependencies
 
 - Google Cloud Sdk
