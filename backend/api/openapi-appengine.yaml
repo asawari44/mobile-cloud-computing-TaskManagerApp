@@ -1,0 +1,230 @@
+swagger: "2.0"
+info:
+  description: "MCC Fall 2019 Group 3 EndPoints."
+  title: "Group 3 Google Cloud Endpoints"
+  version: "1.0.0"
+host: "mcc-fall-2019-g03.appspot.com"
+# [END swagger]
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+schemes:
+  - "https"
+
+
+paths:
+  "/project/create":
+    post:
+      description: "Create a project."
+      operationId: "project"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project Create"
+  "/project/members/add":
+    put:
+      description: "Add members to a project."
+      operationId: "addMembers"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Members Added"
+  "/project/delete":
+    delete:
+      description: "Delete a project."
+      operationId: "deleteProject"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project Deleted"
+  "/task/create":
+    post:
+      description: "Create a task."
+      operationId: "createTask"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Task Created"
+
+  "/user/name":
+    get:
+      description: "Get a user's display name."
+      operationId: "getUsername"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "User"
+
+  "/project/get":
+    get:
+      description: "Get project details."
+      operationId: "getProject"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project"
+
+  "/project/users/profileImag":
+    get:
+      description: "List userID with profileImages of a project."
+      operationId: "profileImages"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "profile images"
+
+  "/project/members/get":
+    get:
+      description: "Get all members of a project"
+      operationId: "getMembers"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "all members"
+
+  "/user/projects":
+    get:
+      description: "Project filter"
+      operationId: "projectFilter"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project filter"
+
+  "/project/attachment":
+    put:
+      description: "Attachments"
+      operationId: "projectAttachment"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project Attachments"
+
+  "/user/id":
+    get:
+      description: "find id of a user"
+      operationId: "userIdWithName"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Id of user with username"
+
+  "/project/report":
+    get:
+      description: "Project Report"
+      operationId: "projectReport"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project Report"
+
+  "/project/attachments":
+    get:
+      description: "Project Attachments"
+      operationId: "projectAttachments"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Project Attachments"
+  "/task":
+    get:
+      description: "Get all tasks"
+      operationId: "tasks"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "tasks"
+  "/task/status":
+    put:
+      description: "Update task status"
+      operationId: "taskStatus"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "taskStatus"
+
+  "/user/name/list":
+    get:
+      description: "Get all usernames"
+      operationId: "allUsernames"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "allUsernames"
+
+  "/project/starred":
+    put:
+      description: "Starred Project"
+      operationId: "starredProject"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "starredProject"
+
+
+  "/project/name/get":
+    get:
+      description: "Search Project by Name"
+      operationId: "searchProject"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "searchProject"
+
+  "/project/keyword/get":
+    get:
+      description: "Search Project by keyword"
+      operationId: "searchKeyword"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "searchKeyword"
+
+  "/isNameExist":
+    get:
+      description: "Search Name existence"
+      operationId: "searchNameExistence"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "searchNameExistence"
+
+definitions:
+  project:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+
+  echoMessage:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+  authInfoResponse:
+    properties:
+      id:
+        type: "string"
+      email:
+        type: "string"

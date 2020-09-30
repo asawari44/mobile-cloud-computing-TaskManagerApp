@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "users": {
+      ".indexOn": ["displayName"]
+    },
+    "projects": {
+      ".indexOn": ["name", "owner", "starred"]
+    }
+  }
+}

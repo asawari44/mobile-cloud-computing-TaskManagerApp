@@ -1,0 +1,12 @@
+#file contains the versions deployed
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started
++  Deployment started

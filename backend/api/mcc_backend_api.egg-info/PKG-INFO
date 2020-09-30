@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mcc-backend-api
+Version: 0.1.1
+Summary: mcc-backend api
+Home-page: UNKNOWN
+Author: Aashir Javed
+Author-email: aashir.javed@aalto.fi
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3

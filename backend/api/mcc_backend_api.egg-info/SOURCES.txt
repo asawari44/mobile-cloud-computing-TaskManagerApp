@@ -1,0 +1,8 @@
+README.md
+setup.py
+mcc_backend_api.egg-info/PKG-INFO
+mcc_backend_api.egg-info/SOURCES.txt
+mcc_backend_api.egg-info/dependency_links.txt
+mcc_backend_api.egg-info/not-zip-safe
+mcc_backend_api.egg-info/requires.txt
+mcc_backend_api.egg-info/top_level.txt

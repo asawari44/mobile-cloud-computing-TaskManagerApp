@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dl">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateProject">
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/project"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Project Name"
+        android:inputType="text"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_middle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Description"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_middle"
+        android:textSize="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+
+
+
+    <EditText
+        android:id="@+id/deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Project Deadline"
+        android:clickable="true"
+        android:editable="false"
+        android:focusableInTouchMode="false"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_middle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+
+    <TextView
+        android:id="@+id/Deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Project Type"
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal"
+        android:checked="true"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_middle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+    <RadioButton
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:checked="false"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_middle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/keywords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add keywords (Enter them below)"
+        android:inputType="textPersonName"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:gravity="bottom"
+        android:textColor="#000000"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="35dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/keyword_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter keyword"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_middle"
+            android:textSize="16dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWX1Z1234567890abcdefghijklmnopqrstuvwxyz " />
+
+        <EditText
+            android:id="@+id/keyword_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter keyword"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/edit_text_middle"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWX1Z1234567890abcdefghijklmnopqrstuvwxyz "
+            />
+        <EditText
+            android:id="@+id/keyword_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter keyword"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_middle"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWX1Z1234567890abcdefghijklmnopqrstuvwxyz "
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:text="create" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:ems="10" />
+
+</LinearLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navbar"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

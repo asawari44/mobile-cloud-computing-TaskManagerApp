@@ -1,0 +1,30 @@
+<resources>
+    <!-- Strings related to activity names -->
+
+    <string name="app_name">DigiTask</string>
+    <string name="login">Login</string>
+    <string name="Signup">Sign Up</string>
+    <string name="NewProject">New Project</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="CreateTask">Create Task</string>
+
+
+    <!-- Strings related to navigation menu -->
+    <string name="Open">DigiTask</string>
+    <string name="Close">DigiTask</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Add_project_members">Add Project Members</string>
+    <string-array name="shopping_item">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>

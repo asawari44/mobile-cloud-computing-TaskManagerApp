@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/addmembers"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Add Members" />
+    <item
+        android:id="@+id/addattachments"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Add Attachments" />
+
+    <item
+        android:id="@+id/generatereport"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Generate Project Report"/>
+    <item
+        android:id="@+id/deleteproject"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Delete Project"/>
+
+</menu>
